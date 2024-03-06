@@ -64,3 +64,18 @@ nextButton.addEventListener("click", () => {
 });
 // Show the first slide initially
 showSlide(slideIndex);
+
+// window.addEventListener("scroll", function () {
+//   const button = document.querySelector(".floating-nav button");
+//   const buttonPosition = button.getBoundingClientRect().top;
+//   const windowHeight = window.innerHeight;
+
+//   // Check if the button is in the viewport
+//   if (buttonPosition < windowHeight) {
+//     // If it is, fade it in by setting opacity to 1
+//     button.style.opacity = "1";
+//   } else {
+//     // If it's not, keep it hidden
+//     button.style.opacity = "0";
+//   }
+// });

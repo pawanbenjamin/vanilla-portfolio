@@ -84,8 +84,7 @@ header {
   align-items: baseline;
 }
 
-header ul,
-footer ul {
+ul {
   display: flex;
   list-style: none;
 }
@@ -195,11 +194,27 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 6rem;
+}
+
+.socials-container ul {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-container {
   display: flex;
   flex-direction: column;
+}
+
+#about {
+  height: 100vh;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 4rem;
 }
