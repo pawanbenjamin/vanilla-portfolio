@@ -110,7 +110,7 @@ button {
   cursor: pointer;
   margin: 1.5rem;
   background-color: transparent;
-  border: 1px solid black;
+  border: none;
 }
 
 button:hover {
@@ -152,6 +152,7 @@ form {
 #projects article {
   margin: 2rem;
 }
+
 /* Project Card */
 
 .project-card {
@@ -162,9 +163,6 @@ form {
   width: 100%;
   padding: 4rem;
   margin: 0 2rem;
-}
-
-.project-card:hover {
 }
 
 .projects-slider {
@@ -204,7 +202,4 @@ form {
 .contact-container {
   display: flex;
   flex-direction: column;
-}
-
-#contact {
 }
