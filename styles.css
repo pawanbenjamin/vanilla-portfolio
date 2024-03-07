@@ -218,3 +218,8 @@ form {
   height: 100%;
   padding: 4rem;
 }
+
+.tech-container ul {
+  display: flex;
+  flex-direction: column;
+}

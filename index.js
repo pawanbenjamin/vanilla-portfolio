@@ -50,6 +50,18 @@ function showSlide(index) {
   const slideWidth = window.innerWidth;
 
   slider.style.transform = `translateX(-${slideWidth * index}px)`;
+
+  prevButton.style.opacity = "1";
+  nextButton.style.opacity = "1";
+
+  if (index === 0) {
+    prevButton.style.opacity = "0";
+    nextButton.style.opactiy = "1";
+  }
+  if (index === slider.children.length - 1) {
+    nextButton.style.opacity = "0";
+    prevButton.style.opacity = "1";
+  }
 }
 
 prevButton.addEventListener("click", () => {
