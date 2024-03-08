@@ -69,7 +69,7 @@ ul {
 section {
   position: relative;
   padding: 2rem;
-  height: 100vh;
+  height: 100svh;
 }
 
 a {
@@ -90,13 +90,12 @@ button {
   left: 0;
   position: absolute;
 }
-
 /* -------------  Hero -------------  */
 
 #hero {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100svh;
   justify-content: center;
   align-items: center;
 }
