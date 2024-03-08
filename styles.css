@@ -61,13 +61,6 @@ body {
   flex-direction: column;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  align-items: baseline;
-}
-
 ul {
   display: flex;
   list-style: none;
@@ -83,12 +76,6 @@ a {
   text-decoration: none;
 }
 
-.floating-nav {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-}
-
 button {
   cursor: pointer;
   margin: 1.5rem;
@@ -96,20 +83,15 @@ button {
   border: none;
 }
 
-/* Hero */
+/* ------------- Nav button in lower left of each page -------------  */
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.floating-nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
 }
 
-.fadeIn {
-  animation: fadeIn 7s ease-in-out;
-}
+/* -------------  Hero -------------  */
 
 #hero {
   display: flex;
@@ -119,21 +101,24 @@ button {
   align-items: center;
 }
 
-/* contact */
+/* -------------  Bio -------------  */
 
-#form {
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-form {
+.bio {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  padding: 1rem;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
 }
+
+/* -------------  Skills -------------  */
+
+.tech-container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------  Projects -------------  */
 
 #projects {
   display: flex;
@@ -146,7 +131,16 @@ form {
   margin: 1rem;
 }
 
-/* Project Card */
+.projects-slider {
+  display: flex;
+  transition: all 0.5s;
+}
+/* Next and Prev Buttons */
+.slider-arrows {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 
 .project-card {
   flex: 0 0 auto;
@@ -156,17 +150,6 @@ form {
 }
 .project-card:nth-child(n + 2) {
   padding: 0 2rem;
-}
-
-.projects-slider {
-  display: flex;
-  transition: all 0.5s;
-}
-
-.slider-arrows {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
 }
 
 .icon {
@@ -180,9 +163,25 @@ form {
   align-items: center;
 }
 
+/*  ------------- Contact -------------  */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
 #form {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 6rem;
   padding: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 80%;
 }
 
 .socials-container {
@@ -197,29 +196,7 @@ form {
   flex-direction: column;
 }
 
-.contact-container {
-  display: flex;
-  flex-direction: column;
-}
-
-#about {
-  height: 100vh;
-}
-
-.bio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  padding: 2rem;
-}
-
-.tech-container ul {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Define keyframes for letter animation */
+/*  ------------- Define keyframes for letter animation -------------  */
 @keyframes letterReveal {
   0% {
     opacity: 0;
@@ -231,20 +208,25 @@ form {
   }
 }
 
-/* Apply animation to each letter */
+/*  ------------- Apply animation to each letter -------------  */
 #hero h2 {
   display: inline-block;
   font-size: 3rem;
   overflow-wrap: break-word;
 }
 
-#hero h2 span {
+#hero h2 span,
+#explore {
   display: inline-block;
   opacity: 0;
   animation: letterReveal 0.5s forwards;
 }
 
-/* Delay the animation for each letter */
+#explore {
+  margin-top: 2rem;
+}
+
+/*  ------------- Delay the animation for each letter -------------  */
 #hero h2 span:nth-child(2) {
   animation-delay: 0.1s;
 }
@@ -428,4 +410,12 @@ form {
 
 #hero h2 span:nth-child(52) {
   animation-delay: 5.1s;
+}
+
+#hero h2 span:nth-child(53) {
+  animation-delay: 5.2s;
+}
+
+#explore {
+  animation-delay: 5.3s;
 }

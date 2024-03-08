@@ -17,6 +17,10 @@ document.querySelector("form").addEventListener("submit", (e) => {
   const formData = new FormData(e.target);
   const email = formData.get("email");
   const message = formData.get("message");
+  if (!email || !message) {
+    alert("Please fill in both fields!");
+    return;
+  }
   console.log({ email, message });
 
   const serv_id = "service_az9hbqb";
