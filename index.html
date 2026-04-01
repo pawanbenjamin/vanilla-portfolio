@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PB - Dev</title>
+    <title>Pawan Benjamin | Fullstack Engineer</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,186 +17,395 @@
     ></script>
     <script defer src="index.js"></script>
   </head>
-  <body id="home" class="montserrat-body">
+  <body id="home">
+    <nav>
+      <a href="#home" class="nav-logo">pb</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
     <main>
       <section id="hero">
-        <h2>
-          <span>👋🏽</span><span>&nbsp;</span><span>h</span><span>e</span><span>l</span><span>l</span><span>o</span><span>!</span><br />
-          <span>I</span><span>'</span><span>m</span><span>&nbsp;</span><span>p</span><span>a</span><span>w</span><span>a</span><span>n</span><span>,</span>
-          <br/>
-          <span>f</span><span>u</span><span>l</span><span>l</span><span>s</span><span>t</span><span>a</span><span>c</span><span>k</span><span>&nbsp;</span>
-          <br>
-          <span>d</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span><br/><span>&</span><span>&nbsp</span><span>e</span><span>d</span><span>u</span><span>c</span><span>a</span><span>t</span><span>o</span><span>r</span><span>.</span>
-        </h2>
-        <div id="explore">
-          <a href="#about">explore</a>
-        </div>
+        <h1 class="hero-text"></h1>
+        <a href="#about" id="explore">Explore &darr;</a>
       </section>
-      <section id="about">
-        <h2>👨🏼‍🚀 Bio</h2>
-        <div class="bio">
-          <p>
-            much of the creativity and intricate thinking i developed in music, has translated into the world of development.
-            <br><br>
-            The spirit of cultivating lifelong learning habits has been integral to my professional journey. This curiosity to learn drives me as a developer, aritst and educator.
-            <br><br>
-         </div>
-        </div>
-        <div class="floating-nav">
-          <a href="#skills"> <button type="button">Skills</button></a>
-        </div>
-      </section>
-      <section id="skills">
-        <h2>👨🏽‍💻 Skills</h2>
-        <div class="bio">
-          <p>
-            Throughout my years of experience in both building and teaching, I've acquired proficiency in a diverse range of web technologies.
-          </p>
-         <br>
-         <p>Proficient Technologies include:</p>
-         <div class="tech-container">
-          <ul>
-            <li>Typescript / Javascript</li>
-            <li>SQL / Postgresql / ORMs</li>
-            <li>Express</li>
-            <li>Next Js</li>
-            <li>React Native</li>
-            <li>Expo</li>
-            <li>Astro JS</li>
-            <li>AWS</li>
-            <li>Tailwind CSS</li>
-            <li>Chakra UI</li>
-            <li>Python</li>
-          </ul>
-          <br>
-         </div>
-        </div>
-        <div class="floating-nav">
-          <a href="#projects"> <button type="button">Go To Projects</button></a>
-        </div>
-      </section>
-      <section id="projects">
-        <h2>🛠️ Projects</h2>
 
+      <section id="about">
+        <div class="section-inner reveal">
+          <h2>About</h2>
+          <p>
+            I'm a full-stack engineer with a background in music and education.
+            After earning a B.M. in Jazz Saxophone from Manhattan School of
+            Music, I transitioned into software development &mdash; bringing the
+            same discipline, creativity, and collaborative spirit that defined
+            my years as a musician.
+          </p>
+          <p>
+            Over the past 5+ years, I've built production applications,
+            mentored 500+ developers, and led engineering teams. I thrive at
+            the intersection of building and teaching.
+          </p>
+          <div class="education">
+            <h3>Education</h3>
+            <div class="education-items">
+              <div class="education-item">
+                <span class="education-school">Fullstack Academy</span>
+                <span class="education-detail">Software Engineering, 2020</span>
+              </div>
+              <div class="education-item">
+                <span class="education-school">Manhattan School of Music</span>
+                <span class="education-detail">B.M., Jazz Saxophone, 2010</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="section-inner reveal">
+          <h2>Experience</h2>
+          <div class="experience-timeline">
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Full Stack Engineer</span>
+                <span class="experience-separator">&mdash;</span>
+                <span class="experience-company">Nemonx</span>
+              </div>
+              <span class="experience-date">Nov 2025 &ndash; Present &middot; Contract</span>
+              <p class="experience-desc">
+                Building and scaling full-stack applications with NestJS + React
+                (TypeScript). Designed JWT authentication with RBAC, integrated
+                AI-driven features, and containerized services with Docker for
+                CI/CD pipelines. Modeled data across SQL and NoSQL systems.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Lead Learner Experience Manager & Platform Developer</span>
+                <span class="experience-separator">&mdash;</span>
+                <span class="experience-company">Fullstack Academy</span>
+              </div>
+              <span class="experience-date">May 2025 &ndash; Present</span>
+              <p class="experience-desc">
+                Built and maintained internal tools and dashboards (React,
+                TypeScript, Angular) used across 10+ cohorts and 250+ users.
+                Developed automation systems reducing manual workflows. Led and
+                mentored a team supporting high-scale program operations while
+                acting as technical escalation point.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Learner Experience Manager</span>
+                <span class="experience-separator">&mdash;</span>
+                <span class="experience-company">Fullstack Academy</span>
+              </div>
+              <span class="experience-date">Jul 2024 &ndash; May 2025</span>
+              <p class="experience-desc">
+                Managed systems supporting 250+ concurrent users. Built data
+                pipelines and reporting workflows using APIs and scripting
+                tools. Delivered instruction in JavaScript, React, Node.js, and
+                PostgreSQL.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Assistant Manager, Academic Success</span>
+                <span class="experience-separator">&mdash;</span>
+                <span class="experience-company">Fullstack Academy</span>
+              </div>
+              <span class="experience-date">Jul 2023 &ndash; Jul 2024</span>
+              <p class="experience-desc">
+                Led a team of ~20 engineers and instructors supporting
+                full-stack application development. Designed centralized
+                reporting systems to track performance, retention, and
+                engagement metrics.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Instructor & Curriculum Developer</span>
+                <span class="experience-separator">&mdash;</span>
+                <span class="experience-company">Fullstack Academy</span>
+              </div>
+              <span class="experience-date">Mar 2021 &ndash; Aug 2023</span>
+              <p class="experience-desc">
+                Taught and authored curriculum for full-stack development (PERN
+                stack). Mentored 500+ developers through production-grade
+                applications and capstone projects. Delivered instruction in
+                algorithms, data structures, and scalable architecture.
+              </p>
+            </div>
+
+            <div class="experience-item">
+              <div class="experience-header">
+                <span class="experience-role">Freelance Web Developer</span>
+                <span class="experience-separator">&mdash;</span>
+                <span class="experience-company">Mariposa Wellness</span>
+              </div>
+              <span class="experience-date">Nov 2020 &ndash; Present</span>
+              <p class="experience-desc">
+                Built and deployed a performant marketing site using Astro,
+                React, and Tailwind. Optimized for SEO, accessibility, and
+                Lighthouse performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="section-inner reveal">
+          <h2>Skills</h2>
+          <div class="skills-categories">
+            <div class="skills-category">
+              <span class="skills-category-label">Languages</span>
+              <div class="skills-grid">
+                <span class="skill-pill">TypeScript</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">Java</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <span class="skills-category-label">Frontend</span>
+              <div class="skills-grid">
+                <span class="skill-pill">React</span>
+                <span class="skill-pill">Next.js</span>
+                <span class="skill-pill">React Native</span>
+                <span class="skill-pill">Angular</span>
+                <span class="skill-pill">Astro</span>
+                <span class="skill-pill">Tailwind CSS</span>
+                <span class="skill-pill">Chakra UI</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <span class="skills-category-label">Backend</span>
+              <div class="skills-grid">
+                <span class="skill-pill">Node.js</span>
+                <span class="skill-pill">NestJS</span>
+                <span class="skill-pill">Express</span>
+                <span class="skill-pill">REST APIs</span>
+                <span class="skill-pill">JWT Auth</span>
+                <span class="skill-pill">RBAC</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <span class="skills-category-label">Data</span>
+              <div class="skills-grid">
+                <span class="skill-pill">PostgreSQL</span>
+                <span class="skill-pill">Prisma</span>
+                <span class="skill-pill">NoSQL</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <span class="skills-category-label">Infrastructure</span>
+              <div class="skills-grid">
+                <span class="skill-pill">Docker</span>
+                <span class="skill-pill">CI/CD</span>
+                <span class="skill-pill">AWS</span>
+                <span class="skill-pill">Vercel</span>
+                <span class="skill-pill">Netlify</span>
+                <span class="skill-pill">Expo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-inner">
+          <h2 class="reveal">Projects</h2>
+        </div>
         <div class="projects-slider">
           <article class="project-card">
-            <div>
-              <h3>Pb's Muzik Player</h3>
-              <span>Status 🟢 deployed &nbsp;</span
-              ><span
-                ><a href="https://next-muzik-player.vercel.app"
-                  >next-muzik-player.vercel.app</a
-                ></span
-              >
-              <div >
-                <a href="https://github.com/pawanbenjamin/next-muzik-player" class="gh-row"">
-                <svg
-                  class="icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 496 512"
-                >
-                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                  <path
-                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                  />
-                </svg>
-                Github
-              </a>
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3>Pb's Muzik Player</h3>
+                <span class="status deployed">
+                  <span class="status-dot"></span>
+                  Deployed
+                </span>
               </div>
-              <h4>Technologies</h4>
-              <ul>
-                <li>Next JS, Prisma, Easy Peasy (Redux) AWS S3, JWT</li>
-              </ul>
-            </div>
-            <h4>About the Project</h4>
-            <p>
-              A Full-stack, Spotify clone built with React, Next.js, Prisma and
-              Typescript deployed to Vercel. Leverages Next JS’s App router as
-              well as server actions, along with Howler JS, Zod, Prisma, Bcrypt,
-              JSON Webtokens and Tailwind UI. Utilizes a combination of both
-              client and server components optimizing application performance
-              with Next JS
-            </p>
-          </article>
-          <article class="project-card">
-            <div>
-              <h3>Microtonal Synthesizer</h3>
-              <span>Status 🔴 development &nbsp;</span>
-              <div>
+              <p class="project-desc">
+                A full-stack Spotify clone using Next.js, Prisma, and
+                PostgreSQL. Features authentication, serverless APIs, and an
+                audio playback system powered by Howler.js. Deployed to Vercel
+                with a combination of client and server components for
+                optimized performance.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Prisma</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">AWS S3</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Howler.js</span>
+              </div>
+              <div class="project-links">
                 <a
-                  class="gh-row"
-                  href="https://github.com/pawanbenjamin/electron-shruti-synth"
-                  ><svg
+                  href="https://next-muzik-player.vercel.app"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Live Site &rarr;
+                </a>
+                <a
+                  href="https://github.com/pawanbenjamin/next-muzik-player"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg
                     class="icon"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 496 512"
                   >
-                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                     <path
                       d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
                     />
                   </svg>
-                  Github
+                  GitHub
                 </a>
               </div>
-              <h4>Technologies</h4>
-              <ul>
-                <li>Electron JS, WebMidi API, Tone JS, React</li>
-              </ul>
             </div>
-            <h4>About the Project</h4>
-            <p>
-              A microtonal browser music synthesizer built upon the WebAudio API to create your own microtonal music with <a href="https://en.wikipedia.org/wiki/Just_intonation"><strong>Just Intonation</strong></a> principles.
-              <br>
+          </article>
 
-            </p>
-   
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3>Shruti Synth</h3>
+                <span class="status deployed">
+                  <span class="status-dot"></span>
+                  Deployed
+                </span>
+              </div>
+              <p class="project-desc">
+                A microtonal browser synthesizer built on the WebAudio API.
+                Features a real-time synthesis engine with custom tuning systems
+                based on
+                <a
+                  href="https://en.wikipedia.org/wiki/Just_intonation"
+                  style="color: var(--accent); font-weight: 500"
+                  target="_blank"
+                  rel="noopener"
+                  >Just Intonation</a
+                >
+                principles, with WebMIDI support for hardware controllers.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">WebAudio API</span>
+                <span class="tech-tag">Tone.js</span>
+                <span class="tech-tag">WebMIDI</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://shruti-synth.netlify.app/"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Live Site &rarr;
+                </a>
+                <a
+                  href="https://github.com/pawanbenjamin/shruti-synth"
+                  class="project-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                  >
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
           </article>
         </div>
-        <div class="slider-arrows">
-          <button class="prev-btn">Prev</button>
-          <button class="next-btn">Next</button>
-        </div>
-        <div class="floating-nav">
-          <a href="#contact"> <button type="button">contact</button></a>
+
+        <div class="slider-controls">
+          <button class="prev-btn" aria-label="Previous project">&larr;</button>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="next-btn" aria-label="Next project">&rarr;</button>
         </div>
       </section>
+
       <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-container">
-          <div id="form">
+        <div class="section-inner reveal">
+          <h2>Get in Touch</h2>
+          <div class="contact-container">
             <form action="">
-              <label for="email">Your Email: </label>
-              <input name="email" title="email" type="text" />
-              <label for="message">Messsage: </label>
+              <label for="email">Email</label>
+              <input
+                name="email"
+                id="email"
+                type="email"
+                placeholder="your@email.com"
+              />
+              <label for="message">Message</label>
               <textarea
-                title="message"
                 name="message"
-                id=""
-                cols="20"
-                rows="4"
+                id="message"
+                rows="5"
+                placeholder="Your message..."
               ></textarea>
-              <button type="submit">Submit 🙏🏽</button>
+              <button type="submit">Send Message</button>
             </form>
-          </div>
-          <div class="socials-container">
-            <h3>Find me on other platforms</h3>
-            <ul>
-              <li><a href="https://github.com/pawanbenjamin">💻 Github</a></li>
-              <li>
-                <a href="https://www.linkedin.com/in/pawanbenjamin/"
-                  >🧑🏻‍💼 LinkedIn</a
+            <div class="socials">
+              <h3>Find me elsewhere</h3>
+              <div class="social-links">
+                <a
+                  href="https://github.com/pawanbenjamin"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener"
                 >
-              </li>
-              <li><a href="https://pawanbenjamin.com/">🎼 Music / Art</a></li>
-            </ul>
+                  <span class="link-icon">&#60;/&#62;</span> GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/pawanbenjamin/"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="link-icon">in</span> LinkedIn
+                </a>
+                <a
+                  href="https://pawanbenjamin.com/"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="link-icon">&#9835;</span> Music / Art
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="floating-nav" id="bottom">
-          <a href="#home"> <button type="button">Back to Top</button></a>
+          <a href="#home" class="back-to-top">&uarr; Back to Top</a>
         </div>
       </section>
     </main>
   </body>
-  <script></script>
 </html>
